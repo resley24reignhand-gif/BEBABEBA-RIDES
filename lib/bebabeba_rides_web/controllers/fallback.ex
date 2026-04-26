@@ -1,4 +1,4 @@
-# lib/bebabeba_backend/web/controllers/fallback_controller.ex
+
 
 defmodule BebabebaBcakend.Web.FallbackController do
   use BebabebaBcakend.Web, :controller

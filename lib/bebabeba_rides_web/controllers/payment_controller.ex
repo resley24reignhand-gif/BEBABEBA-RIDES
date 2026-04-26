@@ -1,4 +1,3 @@
-# lib/bebabeba_backend/web/controllers/payment_controller.ex
 
 defmodule BebabebaBcakend.Web.PaymentController do
   use BebabebaBcakend.Web, :controller

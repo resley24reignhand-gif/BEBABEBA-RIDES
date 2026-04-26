@@ -7,11 +7,11 @@ defmodule BebabebaBcakend.Schemas.Booking do
   schema "bookings" do
     field :pickup_location, :string
     field :dropoff_location, :string
-    field :journey_type, :string  # "short", "long"
+    field :journey_type, :string
     field :distance_km, :decimal
     field :passenger_count, :integer
     field :total_cost, :decimal
-    field :status, :string, default: "pending"  # pending, confirmed, completed, cancelled
+    field :status, :string, default: "pending"  
     field :scheduled_at, :naive_datetime
 
     belongs_to :user, BebabebaBcakend.Schemas.User

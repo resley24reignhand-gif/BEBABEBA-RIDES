@@ -3,7 +3,6 @@ defmodule BEBABEBA_RIDESWeb.Endpoint do
 
   socket "/socket", BEBABEBA_RIDESWeb.UserSocket
 
-  # Serve at "/" the static files from "priv/static"
   plug Plug.Static,
     at: "/",
     from: :bebabe_ba_rides,
@@ -11,7 +10,7 @@ defmodule BEBABEBA_RIDESWeb.Endpoint do
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
-  #  [:development] environment.
+  
   if code_reloading? do
     plug Phoenix.CodeReloader
   end
@@ -24,7 +23,7 @@ defmodule BEBABEBA_RIDESWeb.Endpoint do
     json_decoder: Jason
   plug Plug.MethodOverride
   plug Plug.Head
-  plug Plug.Session, 
+  plug Plug.Session,
     store: :cookie,
     key: "_bebabe_ba_rides_key",
     signing_salt: "randomsalt"

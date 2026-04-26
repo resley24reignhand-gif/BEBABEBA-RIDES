@@ -1,4 +1,3 @@
-# lib/bebabeba_backend/schemas/user.ex
 
 defmodule BebabebaBcakend.Schemas.User do
   use Ecto.Schema

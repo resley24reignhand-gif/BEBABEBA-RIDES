@@ -24,22 +24,23 @@ defmodule Bebabeba.MixProject do
   defp elixirc_paths(_), do: ["lib"]
 
   defp deps do
-    [
-      {:phoenix, "~> 1.7.0"},
-      {:phoenix_ecto, "~> 4.4"},
-      {:ecto_sql, "~> 3.10"},
-      {:postgrex, ">= 0.0.0"},
-      {:phoenix_html, "~> 3.3"},
-      {:phoenix_live_dashboard, "~> 0.8.0"},
-      {:telemetry_metrics, "~> 0.6"},
-      {:telemetry_poller, "~> 1.0"},
-      {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"},
-      {:cors_plug, "~> 3.0"},
-      {:swoosh, "~> 1.3"},
-      {:ex_machina, "~> 2.7", only: :test}
-    ]
-  end
+  [
+    {:phoenix, "~> 1.7.0"},
+    {:phoenix_ecto, "~> 4.4"},
+    {:ecto_sql, "~> 3.10"},
+    {:postgrex, ">= 0.0.0"},
+    {:phoenix_html, "~> 3.3"},
+    {:phoenix_live_dashboard, "~> 0.8.0"},
+    {:telemetry_metrics, "~> 0.6"},
+    {:telemetry_poller, "~> 1.0"},
+    {:jason, "~> 1.2"},
+    {:plug_cowboy, "~> 2.5"},
+    {:cors_plug, "~> 3.0"},
+    {:swoosh, "~> 1.3"},
+    {:bcrypt_elixir, "~> 3.0"},       # ✅ add this line
+    {:ex_machina, "~> 2.7", only: :test}
+  ]
+end
 
   defp aliases do
     [
